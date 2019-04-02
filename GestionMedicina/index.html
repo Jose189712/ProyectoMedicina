@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CUALTOSMedic</title>
+    <link rel="stylesheet" href="Estilos/estilos.css">
+    <link rel="stylesheet" href="iconos/style.css">
+    <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+</head>
+
+<body>
+    <header>     
+        <img class="escudo" src="Imagenes/escudo.png"  widht="70px" height="70px" alt="">   
+        <div class="navegacion">
+        <span class="titulo-header">CUALTOSMedic</span>
+        <ul class="items-header">
+            <span class="icon-arrow-thin-right indicador-span"></span>
+            <li class="ingresar">Ingresar</li>
+            <li class="registrar">Registrate</li>
+        </ul>
+        </div>
+    </header>
+    <div  id="conBanners" class="contenedor">
+        <div id="descripcion-banners" class="izquierda medio">
+            <h1 id="titulo">¡Bienvenido a CUALTOSMedic!</h1>
+            <p id="descripcion">Registrate y da seguimiento a tu estancia de Internado o Pasantía</p>
+        </div>
+        <div id="imagen-banner" class="medio derecha">
+            <div class="flechas-carrusel derecha"><span class="icon-cheveron-right cambio-banners"></span></div>
+            <div class="flechas-carrusel izquierda"><span class="icon-cheveron-left cambio-banners"></span></div>
+        </div>
+    </div>
+    <div class="contenedor-formularios">
+        <div class="ocultarLogin"><span class="icon-cheveron-down"></span></div>
+        <form action="login.php" method="post" class="form-login" id="login">
+            <div><img src="Imagenes/usuaria.png" alt="" class="image-login"></div>
+            <h1>Login</h1>
+            <div class="campos">
+                <br>
+                <label for="codigo">Código o Correo</label>
+                <br>
+                <input type="text" name="codigo" id="codigo" placeholder="código o correo">
+                <br>
+                <label for="password">Contraseña</label>
+                <br>
+                <input type="password" name="password" id="password" placeholder="contraseña">
+                <br>
+                <input id="enviar" type="submit" value="Ingresar">
+            </div>
+            <a href="#" id="linkRegister">Regístrate</a>
+        </form>
+    </div>
+    <section class="contenedor1">
+        <div acomodo="medio">
+              <div id="secondSection"> </div>             
+        </div>
+        <div>
+            <h1 id="preregistro">¿No has completado tu pre-registro?</h1>
+            <p id="instrucciones">Pide al coordinador(a) que realice tu pre-registro, o sí ya lo hizo pidele la contraseña y completa tu registro</p>
+            <a id="regreso"><input class="btn-opcion" type="button" value="Registrate"></a>
+        </div>
+    </section>
+    <section id="aqui" class="contenedor"></section>
+    <footer id="footer">
+        <p>Centro Universitario de los Altos</p>
+        <a href="http://www.cualtos.udg.mx/" class="link">
+            <p>http://www.cualtos.udg.mx/</p>
+        </a>
+    </footer>
+
+</body>
+<script src="js/inicial.js"></script>
+
+</html>

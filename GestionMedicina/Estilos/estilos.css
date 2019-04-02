@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, white, #ccc);
+}
+header{
+    padding: 5vh;
+    background-color: transparent;
+    opacity: .8;    
+    color: black;
+    box-shadow: 2px 2px 5px  #111;    
+    width: 100%;
+}
+header > span{
+    margin-left: 5vh;
+    font-family: serif;
+}
+.titulo-header{
+    font-size:35px;
+}
+.escudo{
+    position: relative;
+    bottom: 2vh;
+    left: 5vh;
+}
+.navegacion{
+    width: 92%;
+    float: right;
+    margin-top: 2vh;
+}
+.items-header{
+    float: right;   
+    margin-top: 5px;           
+}
+.items-header > li:hover{    
+    cursor: pointer;
+}
+.items-header > li{
+    display: inline;
+    padding: 2vh;
+    margin-right: 2vh; 
+    font-size: 18px;    
+    border-radius: 5px;
+    clear: both;
+}
+.registrar{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.registrar:hover{
+    background-color: green;
+    box-shadow: 0px 5px 10px 0px #111;    
+}
+.ingresar{
+    border: 1px solid #000;    
+}
+.ingresar:hover{    
+    box-shadow: 0px 5px 16px 0px #111;     
+}
+.indicador-span{
+    position: relative;
+    padding-right: 3vh;
+    margin-top: 1vh;
+    font-size: 25px;
+    animation: move 2s infinite;
+}
+.contenedor{    
+    width: 100%;
+    height: 40vw;
+    background-color: transparent;
+}
+.contenedor1{
+    display:inline-block;
+    width: 100%;
+    height: 40vw;
+    background-color: white;   
+    box-shadow: 2px 2px 4px 2px #ccc; 
+}
+.contenedor .medio{
+    width: 50%;
+    height: inherit;
+    display: inline-block;
+}
+/*Estilos para los formularios*/
+.contenedor-formularios{
+    display: none;
+    width: 100%;
+    height: 45vw;    
+    background-color: #ccc;
+    padding: 0 0 3vw 0;
+    text-align: center;
+    font-size: 10px;
+}
+.form-login{
+    position: relative;    
+    width: 25%;
+    height: 39vw;    
+    margin: 1% 37.5% 0 37.5%;
+    padding: 2vh;
+    background-color: #A7A7A7;      
+    box-shadow: 0px 5px 10px 0px #111;  
+    display: none;
+}
+.form-login > h1{
+    margin-top: 1vh;
+}
+form > div{
+    width: 100%;
+    height: 30%;    
+    border-radius: 50%;
+    padding: 1vh 5vh 1vh 5vh;
+}
+.image-login{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding-bottom: 0;
+}
+.campos{    
+    text-align: left;
+    font-size: 15px;
+    height: auto;
+}
+.campos > input{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    padding: 1.5vh;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.campos > [type="submit"]{
+    padding: 2vh;
+    background-color: #36A0B7;
+    border: 0;
+    color: white;
+    font-size: 1.3rem;
+}
+.campos > [type="text"]:focus{
+    background-color: white;
+}
+.campos > [type="password"]:focus{
+    background-color: white;
+}
+#linkRegister{
+    font-size: 1rem;    
+}
+.ocultarLogin{    
+    display: block;
+    font-size: 40px;   
+    margin-left: 48%;;
+    width: 9vh;
+    padding-top: .5vh;
+    box-shadow: 0px 5px 10px 0px #111; 
+    border-radius: 0 0 50% 50%;    
+}
+.ocultarLogin:hover{
+    color: blue;
+    cursor: pointer;
+}
+/*Fin de los estilos para los formularios*/
+/*Estilos para las demas instrucciones*/
+[acomodo="medio"]{    
+    position:relative;
+    float:left;
+    top: 10vh;
+    left: 5vh;
+    right:50vh;
+    width: 40%;
+    height:400px;
+    background-image: url("../Imagenes/woman-3187087_1280.jpg");
+    background-size: cover;
+    border:0;
+    border-radius: 50%;
+}
+#secondSection{     
+    width: 100%;
+    height:100%; 
+    background-image: repeating-radial-gradient( rgba(255,255,255,.1),rgba(255,255,255,1),white);       
+    border: 0;    
+}
+#preregistro{    
+    position: relative;    
+    top: 20vh;
+    left: 17vh;
+    float:left;
+    font-size: 2rem;
+}
+#instrucciones{
+    text-align: center;
+    width: 70%;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 0;
+    top: 30vh;    
+    left: 30vh;
+}
+.btn-opcion{
+    position: relative;
+    width: 20%;
+    padding:2vh;
+    left: 40vh;
+    top:40vh;
+    border:0;
+    color:white;
+    background-color: #36A0B7;
+    font-size: 1.1rem;
+}
+/*Fin de los estilos para las demas instrucciones*/
+#descripcion-banners{
+    background-color: transparent;    
+    z-index: 5;
+}
+#descripcion-banners > h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5vh 5vh .5vh 5vh;    
+    padding: 5vh;
+    text-align: center;
+    font-size: 3rem;
+    display: none;
+}
+#descripcion{
+    text-align: center;
+    margin: 5vh;
+    padding: 8vh;    
+    font-size: 1.7rem;
+    display: none;    
+}
+#imagen-banner{
+    background-image: url("../Imagenes/principal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 90%;   
+    margin-bottom: 1vh;   
+    margin-top: 2vh;
+    border-radius: 5px; 
+}
+.imagen{
+    width: 70%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.flechas-carrusel{
+    width: 8vh;
+    height: 100%;
+    padding: 2vh;    
+    background-color: black; 
+    opacity: .4;      
+    display: none;
+}
+.derecha{
+    float: right;
+    border-radius: 5px 0 0 5px;
+}
+.izquierda{
+    float: left;
+    border-radius: 0 5px 5px 0;
+}
+.cambio-banners{
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 45%;
+}
+.cambio-banners:hover{
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 1px white;
+}
+footer{
+    text-align: center;    
+    padding: 5vh;
+    height: 10vw;
+    background-color: black;
+    opacity: .8;
+    color: white;
+}
+.link{
+    margin: 5vh;
+    color: white;
+}
+
+@keyframes move{
+    0%{right: 0px;}
+    25%{right: 50px;}
+    50%{right: 50px;}
+    100%{right: 0px;}
+} 
+
